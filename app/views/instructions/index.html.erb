@@ -1,0 +1,37 @@
+<%= Redcarpet::Markdown.new(Redcarpet::Render::HTML, :autolink => true, :space_after_headers => true, :no_intra_emphasis => true).render(IO.read(File.join(Rails.root, 'README.md'))).html_safe %>
+
+<% content_for :style do %>
+	<style>
+		body { 
+			background-color: #04101d;
+			color: #abb6bc;
+			font-family: Helvetica, Arial, sans-serif;
+			font-size: 11pt;
+		}
+
+		a, a:link, a:hover, a:visited {
+			color: #1c62a8;
+		}
+
+		h1 {
+			margin: 1em auto;
+			text-align: center;
+		}
+
+		article {
+			width: 800px;
+			margin: 1em auto;
+		}
+
+		code {
+			display: inline-block;
+			font-family: monospace;
+			font-size: smaller;
+			background-color: #1f4169;
+			color: white;
+			width: 600px;
+			margin: 0.3em 8em 0.3em 0em;
+			padding: 0.7em 0 0.7em 0.7em;
+		}
+	</style>
+<% end %>
