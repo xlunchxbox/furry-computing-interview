@@ -14,7 +14,7 @@ group :test do
   gem 'rspec-rails', '~> 2.4'
   gem 'faker'
   gem 'cucumber'
-  gem 'cucumber-rails', '~. 1.0', require: false
+  gem 'cucumber-rails', '~> 1.0', require: false
   gem 'database_cleaner'
   gem 'capybara'
   gem 'shoulda', require: false
