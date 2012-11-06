@@ -1,0 +1,13 @@
+<% verbose = false %>
+<% ignores = "--tags ~@wip --tags ~@ignore --tags ~@defer" %>
+<% common = "--guess --drb --strict --color #{'--verbose' if verbose}" %>
+<% usual = "#{ignores} #{common} --format progress" %>
+<% rerun = "#{ignores} #{common} --format rerun --out rerun.txt" %>
+<% loc = "features" %>
+<% full = "#{usual} #{loc}" %>
+default: <%= full %>
+html_report: <%= common %> --format html --out=features_report.html <%= loc %>
+wip: --tags @wip <%= full %>
+autotest: <%= full %>
+autotest_all: <%= full %>
+rerun: <%= (File.file?('rerun.txt') ? IO.read('rerun.txt') : "").to_s.strip.empty? ? full : rerun %>
