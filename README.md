@@ -28,8 +28,8 @@ Now that that's over with, what to do?
 		* All the trade's attributes
 		* The trade's price curve type
 		* The Market price (from the price curve data, the 'settle' column in each price curve dataset)
-		* <div>The trade's Mark-to-Market value for the entire tenor of the trade, as described by the formula:<br/>
-&nbsp;&nbsp;<img src="http://latex.codecogs.com/gif.latex?\sum_{t=1}^{m}v&space;*&space;(p&space;-&space;c_{t})" title="\sum_{t=1}^{m}v * (p - c_{t})" /><br/>
+		* The trade's Mark-to-Market value for the entire tenor of the trade, as described by the formula:
+    * ![equation](http://latex.codecogs.com/gif.latex?\sum_{t=1}^{m}v&space;*&space;(p&space;-&space;c_{t})" title="\sum_{t=1}^{m}v * (p - c_{t}))
 where _t_ is the period (usually a month), *m* is the total number of periods in the trade, *v* is the volume of the trade, *p* is the price of the trade, and *c* is the market price of the trade for that month, which is pulled from the respective curvefor that trade.</div>
 		* Display the portfolio Mark-to-Market value, which is the sum of the MTM value of all the trades.
 1. Submit a pull request to us.  Don't know what that is?  See [here](https://help.github.com/articles/creating-a-pull-request).
