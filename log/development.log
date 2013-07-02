@@ -1,0 +1,47 @@
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-02 17:28:27 -0500
+Connecting to database specified by database.yml
+Processing by InstructionsController#index as HTML
+  Rendered instructions/index.html.erb within layouts/application (141.1ms)
+Compiled application.css  (5ms)  (pid 26626)
+Compiled jquery.js  (3ms)  (pid 26626)
+Compiled jquery_ujs.js  (0ms)  (pid 26626)
+Compiled application.js  (212ms)  (pid 26626)
+Completed 200 OK in 649ms (Views: 649.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-02 17:28:28 -0500
+Served asset /application.css - 200 OK (7ms)
+
+
+Started GET "/assets/trades.css?body=1" for 127.0.0.1 at 2013-07-02 17:28:28 -0500
+Served asset /trades.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/instructions.css?body=1" for 127.0.0.1 at 2013-07-02 17:28:28 -0500
+Served asset /instructions.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-02 17:28:28 -0500
+Served asset /jquery.js - 200 OK (80ms)
+
+
+Started GET "/assets/github.css?body=1" for 127.0.0.1 at 2013-07-02 17:28:28 -0500
+Served asset /github.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-02 17:28:28 -0500
+Served asset /jquery_ujs.js - 200 OK (7ms)
+
+
+Started GET "/assets/trades.js?body=1" for 127.0.0.1 at 2013-07-02 17:28:28 -0500
+Served asset /trades.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-02 17:28:28 -0500
+Served asset /application.js - 200 OK (5ms)
+
+
+Started GET "/assets/instructions.js?body=1" for 127.0.0.1 at 2013-07-02 17:28:28 -0500
+Served asset /instructions.js - 304 Not Modified (1ms)
