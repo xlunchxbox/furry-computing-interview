@@ -9,7 +9,7 @@ Glowing-Cyril Interview
 
 Like any interview, this is intended to measure some aspect of the applicant's ability.  In this case, we're looking at the applicant's (that's you, BTW) ability to understand a real-world financial problem, break it down, and solve it.  Because at the moment we work mostly in Ruby with Rails, we're asking you to do it with same.  You may or may not know Rails (or Git or the command-line or any number of other things we'll be touching on); you may or may not understand finance, and all that may or may not matter.  Give it a try; you'll be surprised what you can do with a little hard work and some crafty Googling.
 
-Also: you may be able to plagiarize the solution to this, but we'd recommend against it.  Let's say you do, and let's say you happen to hide that fact from us, get through any other interviews and such, and further that we decide to hire you.  It's likely that you'll be found out sooner or later, and that would be a [Bad Thing](http://www.catb.org/jargon/html/B/Bad-Thing.html).  That's not to say you can't use the Googles (by all means...), just do it yourself.  You will likely be asked to defend your solution, anyway, so it'd be best to understand what you've submitted.
+Also: you may be able to plagiarize the [solution](https://github.com/micahstubbs/glowing-cyril-interview) to this, but we'd recommend against it.  Let's say you do, and let's say you happen to hide that fact from us, get through any other interviews and such, and further that we decide to hire you.  It's likely that you'll be found out sooner or later, and that would be a [Bad Thing](http://www.catb.org/jargon/html/B/Bad-Thing.html).  That's not to say you can't use the Googles (by all means...), just do it yourself.  You will likely be asked to defend your solution, anyway, so it'd be best to understand what you've submitted.
 
 -----
 
@@ -19,7 +19,7 @@ If you're already familiar with Ruby, Rails and Git, work however you'd like.  I
 
 Now that that's over with, what to do?
 
-1. Fork this repository to your GitHub account (you *did* set up a GitHub account, didn't you?).  See [here](https://help.github.com/articles/fork-a-repo) for instructions.
+1. Fork this [repository](https://github.com/wearemolecule/glowing-cyril-interview) to your GitHub account (you *did* set up a GitHub account, didn't you?).  See [here](https://help.github.com/articles/fork-a-repo) for instructions.
 1. Write some code:
 	* Create some structures to hold the data stored in /db/data/*.csv
 		* Trades (trades.csv)
@@ -28,7 +28,7 @@ Now that that's over with, what to do?
 		* All the trade's attributes
 		* The trade's price curve type
 		* The Market price (from the price curve data, the 'settle' column in each price curve dataset)
-		* The trade's Mark-to-Market value, as described by the formula `volume * (price - market_price)`
+		* The trade's Mark-to-Market value, which is the sum of `volume * (price - market_price)` for every month. The market_price is the respective curve price for a month.
 	* Display the portfolio Mark-to-Market value, which is the sum of the MTM value of all the trades.
 1. Submit a pull request to us.  Don't know what that is?  See [here](https://help.github.com/articles/creating-a-pull-request).
 1. Profit!!!
