@@ -1,4 +1,4 @@
-![molecule](https://app.moleculesoftware.com/assets/logo-login.png "Molecule Software")
+![molecule](http://molecule.io/images/logo-login.png "Molecule Software")
 =======================================================================================
 
 Molecule Software 
