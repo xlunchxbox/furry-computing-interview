@@ -12,3 +12,5 @@
 
 # Ignore tempfiles.
 /tmp
+
+.DS_Store
